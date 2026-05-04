@@ -15,7 +15,7 @@ export const portfolioData: PortfolioItem[] = [
     description:
       "Full institutional website with admission inquiry forms, faculty profiles, event calendar, and technical SEO setup for a private CBSE school.",
     tags: ["Next.js", "Tailwind CSS", "SEO", "Forms"],
-    highlight: "Inquiry form submissions increased 3x in the first month.",
+    highlight: "Designed to increase admission inquiries through structured forms, clear CTAs, and local SEO setup.",
   },
   {
     id: "clinic-dashboard",
@@ -24,7 +24,7 @@ export const portfolioData: PortfolioItem[] = [
     description:
       "Patient management dashboard with appointment booking, doctor profiles, and WhatsApp notification integration for a private clinic group.",
     tags: ["React", "Dashboard", "WhatsApp API", "Database"],
-    highlight: "Reduced manual appointment calls by 60%.",
+    highlight: "Designed to reduce manual appointment handling through booking forms, WhatsApp notifications, and admin workflows.",
   },
   {
     id: "real-estate-ai",
@@ -60,6 +60,6 @@ export const portfolioData: PortfolioItem[] = [
     description:
       "Automated a 6-step manual onboarding flow for a B2B services company using webhook integrations, email sequences, and a CRM connector.",
     tags: ["Automation", "CRM", "Webhooks", "Email"],
-    highlight: "Saved 12+ hours per week of manual administrative work.",
+    highlight: "Designed to reduce repetitive administrative work through webhook integrations, email automation, and CRM sync.",
   },
 ];

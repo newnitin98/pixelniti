@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
@@ -28,10 +28,7 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close mobile menu when route changes
-  useEffect(() => {
-    setMobileMenuOpen(false);
-  }, [pathname]);
+  const closeMobileMenu = useCallback(() => setMobileMenuOpen(false), []);
 
   return (
     <header
@@ -104,6 +101,7 @@ export function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
+                  onClick={closeMobileMenu}
                   className={cn(
                     "text-lg font-medium px-4 py-2 rounded-md",
                     pathname === link.href
@@ -116,6 +114,7 @@ export function Navbar() {
               ))}
               <Link
                 href="/contact"
+                onClick={closeMobileMenu}
                 className="mx-4 mt-4 px-5 py-3 text-center font-medium text-white bg-primary rounded-md shadow-sm"
               >
                 Start Project

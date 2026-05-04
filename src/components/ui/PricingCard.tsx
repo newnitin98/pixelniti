@@ -40,6 +40,9 @@ export function PricingCard({ tier, delay = 0 }: PricingCardProps) {
 
       <div className="mb-8 pb-8 border-b border-border">
         <p className="text-2xl font-bold text-foreground">{tier.priceLabel}</p>
+        {tier.startingFrom && (
+          <p className="text-sm font-medium text-primary mt-1">{tier.startingFrom}</p>
+        )}
         <p className="text-xs text-muted-foreground mt-1">{tier.priceNote}</p>
       </div>
 

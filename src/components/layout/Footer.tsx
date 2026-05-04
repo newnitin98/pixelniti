@@ -119,10 +119,11 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
-          <p>
-            © {currentYear} PixelNiti. All rights reserved.
-            <span className="ml-2 text-muted-foreground/60">Website crafted by PixelNiti</span>
-          </p>
+          <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+            <p>© {currentYear} PixelNiti. All rights reserved.</p>
+            <span className="hidden md:inline text-muted-foreground/30">·</span>
+            <p className="text-muted-foreground/60">Website crafted by PixelNiti</p>
+          </div>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-foreground transition-colors">
               Privacy Policy

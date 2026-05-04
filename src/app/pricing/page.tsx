@@ -1,24 +1,25 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { CheckCircle2 } from "lucide-react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { CTASection } from "@/components/ui/CTASection";
 import { PricingCard } from "@/components/ui/PricingCard";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
-import { pricingData } from "@/data/pricing";
+import { pricingData, maintenancePlan, pricingFactors } from "@/data/pricing";
 import { faqsData } from "@/data/faqs";
 
 export const metadata: Metadata = {
-  title: "Pricing | PixelNiti Engagement Models",
+  title: "Pricing | PixelNiti — Websites, Apps & AI Automation",
   description:
-    "Transparent engagement models for websites, web applications, and AI automation. All projects are scoped individually — get a custom quote.",
+    "Transparent starting prices for PixelNiti services — business websites from ₹10,000, web apps from ₹25,000. All projects receive a custom quote scoped to your requirements.",
   alternates: {
     canonical: "https://pixelniti.com/pricing",
   },
   openGraph: {
     url: "https://pixelniti.com/pricing",
-    title: "Pricing | PixelNiti Engagement Models",
+    title: "Pricing | PixelNiti — Websites, Apps & AI Automation",
     description:
-      "No rigid packages. Custom quotes scoped to your actual requirements. Business websites, web apps, and AI workflows.",
+      "Starting prices and engagement models for websites, web applications, AI agents, and automation. All quotes are custom-scoped.",
   },
 };
 
@@ -51,13 +52,60 @@ export default function PricingPage() {
         <SectionHeader
           badge="Transparent Pricing"
           heading="Engagement Models That Fit Your Business"
-          subheading="We do not use rigid package pricing. Every project is scoped based on your actual requirements. All quotes are custom — always honest, never padded."
+          subheading="Every project is scoped based on your actual requirements. Starting prices below give you a reference — your final quote will reflect your exact scope."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
           {pricingData.map((tier, index) => (
             <PricingCard key={tier.id} tier={tier} delay={index * 0.1} />
           ))}
+        </div>
+
+        {/* Maintenance Plan */}
+        <div className="max-w-5xl mx-auto mb-12 p-8 rounded-2xl bg-card border border-border">
+          <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+            <div className="flex-1">
+              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-2">
+                Add-on
+              </p>
+              <h3 className="text-xl font-bold text-foreground mb-1">{maintenancePlan.name}</h3>
+              <p className="text-sm font-medium text-primary mb-3">{maintenancePlan.startingFrom}</p>
+              <p className="text-sm text-muted-foreground">{maintenancePlan.description}</p>
+            </div>
+            <ul className="flex-1 space-y-2">
+              {maintenancePlan.features.map((f) => (
+                <li key={f} className="flex items-start gap-3 text-sm text-muted-foreground">
+                  <CheckCircle2 size={15} className="text-emerald-500 shrink-0 mt-0.5" aria-hidden="true" />
+                  <span>{f}</span>
+                </li>
+              ))}
+            </ul>
+            <div className="shrink-0">
+              <Link
+                href="/contact"
+                className="inline-block px-6 py-3 rounded-xl bg-secondary text-foreground font-semibold text-sm hover:bg-secondary/80 transition-all"
+              >
+                Add to Project
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Pricing factors note */}
+        <div className="max-w-5xl mx-auto mb-20 p-6 rounded-2xl bg-muted/40 border border-border">
+          <p className="text-sm font-semibold text-foreground mb-3">
+            Final pricing depends on:
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {pricingFactors.map((factor) => (
+              <span
+                key={factor}
+                className="px-3 py-1.5 rounded-full bg-secondary text-xs text-muted-foreground border border-border"
+              >
+                {factor}
+              </span>
+            ))}
+          </div>
         </div>
 
         <div className="max-w-2xl mx-auto mb-24 p-8 rounded-2xl bg-card border border-border">

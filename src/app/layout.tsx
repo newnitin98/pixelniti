@@ -30,13 +30,13 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: "PixelNiti | Websites, Apps & AI Agents Built with Strategy",
     description:
-      "Premium digital products for businesses that want to grow — websites, apps, AI agents, and automation.",
+      "PixelNiti builds premium websites, business applications, AI agents, and automation workflows for growing businesses. Strategy-first. Design-focused. Built for results.",
     images: [
       {
-        url: "/brand/pixelniti-square-dark.svg",
-        width: 400,
-        height: 400,
-        alt: "PixelNiti logo",
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "PixelNiti - Websites, Apps and AI Agents Built with Strategy",
       },
     ],
   },
@@ -44,7 +44,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "PixelNiti | Websites, Apps & AI Agents Built with Strategy",
     description:
-      "Premium digital products for businesses that want to grow — websites, apps, AI agents, and automation.",
+      "PixelNiti builds premium websites, business applications, AI agents, and automation workflows for growing businesses.",
+    images: ["/twitter-image"],
   },
 };
 
@@ -54,6 +55,7 @@ const organizationJsonLd = {
   name: siteConfig.name,
   url: siteConfig.domain,
   logo: `${siteConfig.domain}/brand/pixelniti-square-dark.svg`,
+  image: `${siteConfig.domain}/opengraph-image`,
   description:
     "Premium digital studio building websites, apps, AI agents, and automation workflows with a focus on business strategy, clean design, and long-term maintainability.",
   email: siteConfig.email,
@@ -62,7 +64,7 @@ const organizationJsonLd = {
     "@type": "Place",
     addressCountry: "IN",
   },
-  sameAs: [],
+  sameAs: [siteConfig.social.facebook],
 };
 
 const websiteJsonLd = {

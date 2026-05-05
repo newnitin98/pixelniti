@@ -9,7 +9,7 @@ export const siteConfig = {
   phone: "",
   whatsapp: "",
   social: {
-    facebook: "#",
+    facebook: "https://www.facebook.com/PixelNiti/",
     instagram: "#",
     youtube: "#",
     x: "#",

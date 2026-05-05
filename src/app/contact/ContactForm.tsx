@@ -4,6 +4,17 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { FacebookIcon, InstagramIcon, YoutubeIcon, XIcon, LinkedinIcon } from "@/components/ui/SocialIcons";
+import { siteConfig } from "@/data/site";
+
+// Replace placeholder social links after PixelNiti social pages are created.
+const socialLinks = [
+  { icon: FacebookIcon, href: siteConfig.social.facebook, label: "Follow PixelNiti on Facebook" },
+  { icon: InstagramIcon, href: siteConfig.social.instagram, label: "Follow PixelNiti on Instagram" },
+  { icon: YoutubeIcon, href: siteConfig.social.youtube, label: "Follow PixelNiti on YouTube" },
+  { icon: XIcon, href: siteConfig.social.x, label: "Follow PixelNiti on X" },
+  { icon: LinkedinIcon, href: siteConfig.social.linkedin, label: "Follow PixelNiti on LinkedIn" },
+];
 
 type FormState = {
   name: string;
@@ -106,7 +117,7 @@ export function ContactForm() {
       router.push("/thank-you");
     } catch {
       setIsSubmitting(false);
-      setErrors({ message: "Something went wrong. Please try again or email us directly at hello@pixelniti.com." });
+      setErrors({ message: `Something went wrong. Please try again or email us at ${siteConfig.email}.` });
     }
   };
 
@@ -163,12 +174,12 @@ export function ContactForm() {
                     <Mail size={20} aria-hidden="true" />
                   </div>
                   <div>
-                    <p className="text-sm font-medium text-foreground">Email</p>
+                    <p className="text-sm font-medium text-foreground">Email us</p>
                     <a
-                      href="mailto:hello@pixelniti.com"
-                      className="text-muted-foreground hover:text-primary transition-colors"
+                      href={`mailto:${siteConfig.email}`}
+                      className="text-muted-foreground hover:text-primary transition-colors break-all"
                     >
-                      hello@pixelniti.com
+                      {siteConfig.email}
                     </a>
                   </div>
                 </div>
@@ -195,6 +206,24 @@ export function ContactForm() {
                     <p className="text-muted-foreground">India (Serving globally)</p>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            {/* Social Media */}
+            <div>
+              <p className="text-sm font-semibold text-foreground mb-3">Follow PixelNiti</p>
+              <div className="flex items-center gap-3 flex-wrap">
+                {socialLinks.map(({ icon: Icon, href, label }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    aria-label={label}
+                    {...(href !== "#" && { target: "_blank", rel: "noopener noreferrer" })}
+                    className="w-9 h-9 flex items-center justify-center rounded-md bg-muted/60 text-muted-foreground hover:bg-primary/10 hover:text-primary transition-colors"
+                  >
+                    <Icon size={16} aria-hidden="true" />
+                  </a>
+                ))}
               </div>
             </div>
 

@@ -1,0 +1,419 @@
+{
+  "communities": {
+    "0": [
+      "content_strategy_elevator_pitch",
+      "content_strategy_tone",
+      "graphify_kg_blog_ideas",
+      "graphify_kg_core_entity",
+      "graphify_kg_persona_doctor",
+      "graphify_kg_persona_local_biz",
+      "graphify_kg_persona_school",
+      "graphify_kg_seo_topic_clusters",
+      "graphify_kg_service_ai_automation",
+      "graphify_kg_service_mobile_app",
+      "graphify_kg_service_tech_ops",
+      "graphify_kg_service_uiux",
+      "graphify_kg_service_website_dev",
+      "project_brief_pixelniti_entity",
+      "project_brief_service_ai_agent",
+      "project_brief_service_app_dev",
+      "project_brief_service_automation",
+      "project_brief_service_uiux",
+      "project_brief_service_website_dev",
+      "project_brief_target_consultant",
+      "project_brief_target_doctor",
+      "project_brief_target_local_business",
+      "project_brief_target_school",
+      "project_brief_target_startup",
+      "readme_docs_folder"
+    ],
+    "1": [
+      "brand_color_palette",
+      "brand_personality",
+      "brand_typography",
+      "brand_ui_elements",
+      "claude_handoff_prompt",
+      "codex_handoff_prompt",
+      "content_strategy_primary_tagline",
+      "project_brief_brand_name_niti",
+      "project_brief_brand_name_pixel",
+      "project_brief_website_objective",
+      "readme_pixelniti",
+      "readme_pixelniti_website",
+      "readme_public_brand",
+      "readme_site_ts",
+      "readme_src_components",
+      "readme_src_data",
+      "readme_vercel_staging",
+      "tech_arch_framer_motion",
+      "tech_arch_future_cms",
+      "tech_arch_lucide",
+      "tech_arch_radix_ui",
+      "tech_arch_tailwind",
+      "tech_arch_typescript"
+    ],
+    "2": [
+      "content_strategy_hero_headline",
+      "graphify_kg_internal_linking",
+      "readme_src_app",
+      "seo_plan_homepage_metadata",
+      "seo_plan_og_twitter",
+      "sitemap_legal_pages",
+      "sitemap_primary_nav",
+      "tech_arch_route_about",
+      "tech_arch_route_contact",
+      "tech_arch_route_home",
+      "tech_arch_route_portfolio",
+      "tech_arch_route_pricing",
+      "tech_arch_route_privacy",
+      "tech_arch_route_process",
+      "tech_arch_route_services",
+      "tech_arch_route_terms"
+    ],
+    "3": [
+      "contact_contactform_handlechange",
+      "contact_contactform_handlesubmit",
+      "contact_contactform_inputclass",
+      "contact_contactform_validate",
+      "src_app_contact_contactform_tsx",
+      "src_components_layout_footer_tsx",
+      "src_components_ui_socialicons_tsx",
+      "ui_socialicons_base",
+      "ui_socialicons_facebookicon",
+      "ui_socialicons_instagramicon",
+      "ui_socialicons_linkedinicon",
+      "ui_socialicons_xicon",
+      "ui_socialicons_youtubeicon"
+    ],
+    "4": [
+      "layout_navbar_handlescroll",
+      "lib_utils_cn",
+      "src_app_pricing_page_tsx",
+      "src_components_layout_navbar_tsx",
+      "src_components_sections_portfoliofilter_tsx",
+      "src_components_ui_faqaccordion_tsx",
+      "src_components_ui_portfoliocard_tsx",
+      "src_components_ui_pricingcard_tsx",
+      "src_components_ui_sectionheader_tsx",
+      "src_lib_utils_ts",
+      "ui_portfoliocard_portfoliocard",
+      "ui_pricingcard_pricingcard"
+    ],
+    "5": [
+      "agents_nextjs_agent_rules",
+      "graphify_kg_schema_org",
+      "robots_txt",
+      "seo_plan_canonical_domain",
+      "seo_plan_technical_seo",
+      "tech_arch_client_components",
+      "tech_arch_nextjs",
+      "tech_arch_server_components",
+      "vercel_guide_custom_domain",
+      "vercel_guide_dns",
+      "vercel_guide_lighthouse"
+    ],
+    "6": [
+      "brand_pixelniti_full_dark",
+      "brand_pixelniti_full_dark_transparent",
+      "brand_pixelniti_full_light",
+      "brand_pixelniti_icon_dark",
+      "brand_pixelniti_icon_dark_transparent",
+      "brand_pixelniti_icon_light",
+      "brand_pixelniti_navbar_dark",
+      "brand_pixelniti_square_dark",
+      "concept_pixelniti_brand_identity"
+    ],
+    "7": [
+      "app_page_home",
+      "sections_servicesgrid_servicesgrid",
+      "sections_statsstrip_statsstrip",
+      "src_app_page_tsx",
+      "src_components_sections_servicesgrid_tsx",
+      "src_components_sections_statsstrip_tsx",
+      "src_components_ui_servicecard_tsx",
+      "ui_servicecard_servicecard"
+    ],
+    "8": [
+      "concept_nextjs_scaffold_assets",
+      "scaffold_file_svg",
+      "scaffold_globe_svg",
+      "scaffold_next_svg",
+      "scaffold_vercel_svg",
+      "scaffold_window_svg"
+    ],
+    "9": [
+      "app_layout_rootlayout",
+      "src_app_layout_tsx",
+      "src_components_ui_animatedgradientbackground_tsx",
+      "ui_animatedgradientbackground_animatedgradientbackground"
+    ],
+    "10": [
+      "tech_arch_github_cicd",
+      "tech_arch_vercel",
+      "vercel_guide_github_push",
+      "vercel_guide_ssl"
+    ],
+    "11": [
+      "src_app_process_page_tsx",
+      "src_components_ui_processstep_tsx",
+      "ui_processstep_processstep"
+    ],
+    "12": [
+      "app_robots_robots",
+      "src_app_robots_ts"
+    ],
+    "13": [
+      "app_sitemap_sitemap",
+      "src_app_sitemap_ts"
+    ],
+    "14": [
+      "about_page_aboutpage",
+      "src_app_about_page_tsx"
+    ],
+    "15": [
+      "contact_page_contactpage",
+      "src_app_contact_page_tsx"
+    ],
+    "16": [
+      "privacy_page_privacypage",
+      "src_app_privacy_page_tsx"
+    ],
+    "17": [
+      "services_page_servicespage",
+      "src_app_services_page_tsx"
+    ],
+    "18": [
+      "src_app_terms_page_tsx",
+      "terms_page_termspage"
+    ],
+    "19": [
+      "brand_footer_credit",
+      "seo_plan_backlink_strategy"
+    ],
+    "20": [
+      "eslint_config_mjs"
+    ],
+    "21": [
+      "next_env_d_ts"
+    ],
+    "22": [
+      "next_config_ts"
+    ],
+    "23": [
+      "postcss_config_mjs"
+    ],
+    "24": [
+      "src_app_portfolio_page_tsx"
+    ],
+    "25": [
+      "src_app_thank_you_page_tsx"
+    ],
+    "26": [
+      "src_components_sections_herosection_tsx"
+    ],
+    "27": [
+      "src_components_sections_servicesdetailsection_tsx"
+    ],
+    "28": [
+      "src_components_ui_ctasection_tsx"
+    ],
+    "29": [
+      "src_data_faqs_ts"
+    ],
+    "30": [
+      "src_data_portfolio_ts"
+    ],
+    "31": [
+      "src_data_pricing_ts"
+    ],
+    "32": [
+      "src_data_process_ts"
+    ],
+    "33": [
+      "src_data_services_ts"
+    ],
+    "34": [
+      "src_data_site_ts"
+    ]
+  },
+  "community_labels": {
+    "0": "Content & Strategy Docs",
+    "1": "Brand Identity System",
+    "2": "SEO & Site Architecture",
+    "3": "Contact Form Logic",
+    "4": "Navigation & Pricing UI",
+    "5": "Next.js Config & SEO Rules",
+    "6": "Brand SVG Assets",
+    "7": "Home Page Sections",
+    "8": "Scaffold Default Assets",
+    "9": "Root Layout & Animations",
+    "10": "CI/CD & Vercel Deployment",
+    "11": "Process Page & Steps UI",
+    "12": "Robots.txt Config",
+    "13": "Sitemap Config",
+    "14": "About Page",
+    "15": "Contact Page",
+    "16": "Privacy Page",
+    "17": "Services Page",
+    "18": "Terms Page",
+    "19": "Brand & SEO Backlinks",
+    "20": "ESLint Config",
+    "21": "Next.js Env Types",
+    "22": "Next.js Config",
+    "23": "PostCSS Config",
+    "24": "Portfolio Page",
+    "25": "Thank You Page",
+    "26": "Hero Section",
+    "27": "Services Detail Section",
+    "28": "CTA Section",
+    "29": "FAQs Data",
+    "30": "Portfolio Data",
+    "31": "Pricing Data",
+    "32": "Process Data",
+    "33": "Services Data",
+    "34": "Site Config"
+  },
+  "god_nodes": [
+    {
+      "id": "readme_pixelniti_website",
+      "label": "PixelNiti Website Repository",
+      "degree": 17
+    },
+    {
+      "id": "project_brief_pixelniti_entity",
+      "label": "PixelNiti Entity (Project Brief)",
+      "degree": 12
+    },
+    {
+      "id": "readme_src_app",
+      "label": "src/app (App Router Pages)",
+      "degree": 10
+    },
+    {
+      "id": "readme_pixelniti",
+      "label": "PixelNiti",
+      "degree": 8
+    },
+    {
+      "id": "sitemap_primary_nav",
+      "label": "Primary Navigation (Sitemap)",
+      "degree": 8
+    },
+    {
+      "id": "graphify_kg_core_entity",
+      "label": "PixelNiti Core Entity (Knowledge Graph)",
+      "degree": 7
+    },
+    {
+      "id": "ui_socialicons_base",
+      "label": "base()",
+      "degree": 6
+    },
+    {
+      "id": "lib_utils_cn",
+      "label": "cn()",
+      "degree": 6
+    },
+    {
+      "id": "tech_arch_nextjs",
+      "label": "Next.js 15 (App Router)",
+      "degree": 6
+    },
+    {
+      "id": "brand_pixelniti_full_dark",
+      "label": "PixelNiti Full Logo Dark",
+      "degree": 5
+    }
+  ],
+  "surprising_connections": [
+    {
+      "source": "docs/ (Graphify Layer Documentation)",
+      "target": "PixelNiti Core Entity (Knowledge Graph)",
+      "source_files": [
+        "README.md",
+        "docs/GRAPHIFY_KNOWLEDGE_GRAPH.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `docs/ (Graphify Layer Documentation)` unexpectedly reaches hub `PixelNiti Core Entity (Knowledge Graph)`"
+    },
+    {
+      "source": "Brand Personality",
+      "target": "PixelNiti",
+      "source_files": [
+        "docs/BRAND_GUIDELINES.md",
+        "README.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "rationale_for",
+      "why": "connects across different repos/directories; peripheral node `Brand Personality` unexpectedly reaches hub `PixelNiti`"
+    },
+    {
+      "source": "Brand Color Palette",
+      "target": "PixelNiti",
+      "source_files": [
+        "docs/BRAND_GUIDELINES.md",
+        "README.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "rationale_for",
+      "why": "connects across different repos/directories; peripheral node `Brand Color Palette` unexpectedly reaches hub `PixelNiti`"
+    },
+    {
+      "source": "Brand Typography",
+      "target": "PixelNiti",
+      "source_files": [
+        "docs/BRAND_GUIDELINES.md",
+        "README.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "rationale_for",
+      "why": "connects across different repos/directories; peripheral node `Brand Typography` unexpectedly reaches hub `PixelNiti`"
+    },
+    {
+      "source": "Pixel (Brand Name Component)",
+      "target": "PixelNiti",
+      "source_files": [
+        "docs/PROJECT_BRIEF.md",
+        "README.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "rationale_for",
+      "why": "connects across different repos/directories; peripheral node `Pixel (Brand Name Component)` unexpectedly reaches hub `PixelNiti`"
+    }
+  ],
+  "suggested_questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `PixelNiti Website Repository` connect `Brand Identity System` to `Content & Strategy Docs`, `SEO & Site Architecture`, `CI/CD & Vercel Deployment`, `Next.js Config & SEO Rules`?",
+      "why": "High betweenness centrality (0.170) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `PixelNiti Core Entity (Knowledge Graph)` connect `Content & Strategy Docs` to `Brand Identity System`?",
+      "why": "High betweenness centrality (0.099) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `src/app (App Router Pages)` connect `SEO & Site Architecture` to `Brand Identity System`?",
+      "why": "High betweenness centrality (0.075) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `Vercel Staging (pixelniti.vercel.app)`, `public/brand (SVG Logo Variants)`, `src/data/site.ts (Central Config)` to the rest of the system?",
+      "why": "40 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Content & Strategy Docs` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.09 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Brand Identity System` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.11 - nodes in this community are weakly interconnected."
+    }
+  ],
+  "node_count": 165,
+  "edge_count": 172
+}

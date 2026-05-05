@@ -4,27 +4,41 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { AnimatedGradientBackground } from "@/components/ui/AnimatedGradientBackground";
+import { siteConfig } from "@/data/site";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   title: "PixelNiti | Websites, Apps & AI Agents Built with Strategy",
-  description:
-    "PixelNiti builds premium websites, business applications, AI agents, automation workflows, and SEO-ready digital experiences for growing businesses.",
+  description: siteConfig.description,
   keywords:
     "PixelNiti, website development, AI agent development, app development, business website, SEO website design, automation services, web development India",
-  metadataBase: new URL("https://pixelniti.com"),
+  metadataBase: new URL(siteConfig.domain),
   alternates: {
-    canonical: "https://pixelniti.com",
+    canonical: siteConfig.domain,
+  },
+  icons: {
+    icon: "/brand/pixelniti-icon-dark-transparent.svg",
+    shortcut: "/brand/pixelniti-icon-dark-transparent.svg",
+    apple: "/brand/pixelniti-square-dark.svg",
+    // TODO: Convert SVG to .ico for maximum browser compatibility
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://pixelniti.com",
-    siteName: "PixelNiti",
+    url: siteConfig.domain,
+    siteName: siteConfig.name,
     title: "PixelNiti | Websites, Apps & AI Agents Built with Strategy",
     description:
       "Premium digital products for businesses that want to grow — websites, apps, AI agents, and automation.",
+    images: [
+      {
+        url: "/brand/pixelniti-square-dark.svg",
+        width: 400,
+        height: 400,
+        alt: "PixelNiti logo",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -37,12 +51,12 @@ export const metadata: Metadata = {
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "PixelNiti",
-  url: "https://pixelniti.com",
+  name: siteConfig.name,
+  url: siteConfig.domain,
+  logo: `${siteConfig.domain}/brand/pixelniti-square-dark.svg`,
   description:
     "Premium digital studio building websites, apps, AI agents, and automation workflows with a focus on business strategy, clean design, and long-term maintainability.",
-  email: "hello@pixelniti.com",
-  telephone: "+91-9893079221",
+  email: siteConfig.email,
   areaServed: "Worldwide",
   foundingLocation: {
     "@type": "Place",
@@ -54,8 +68,8 @@ const organizationJsonLd = {
 const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "PixelNiti",
-  url: "https://pixelniti.com",
+  name: siteConfig.name,
+  url: siteConfig.domain,
 };
 
 export default function RootLayout({

@@ -1,7 +1,11 @@
 # PixelNiti Website
 
-This is the official repository for the [PixelNiti](https://pixelniti.com) digital strategy studio website. 
-It is a production-ready Next.js application built with the App Router, TypeScript, Tailwind CSS, and Framer Motion.
+Official repository for **[PixelNiti](https://pixelniti.com)** — a premium digital strategy and build studio.
+
+**Live:** https://pixelniti.com  
+**Staging:** https://pixelniti.vercel.app  
+**Contact:** pixelnitiofficial@gmail.com  
+**Brand assets:** `public/brand/` (8 SVG logo variants)
 
 ## 🚀 Quick Start
 
@@ -28,7 +32,9 @@ npm start
 - **`/src/app`**: Core application pages and layouts.
 - **`/src/components`**: Reusable UI components.
 - **`/src/data`**: Static data arrays representing services and portfolio content.
-- **`/public`**: Static assets like images, robots.txt, and sitemap.
+- **`/public/brand`**: SVG logo variants (`pixelniti-full-dark-transparent.svg`, `pixelniti-square-dark.svg`, etc.)
+- **`/src/data/site.ts`**: Central config — domain, email, social links, logo paths
+- **`/public`**: Static assets. Social media links in `src/data/site.ts` are currently `#` placeholders — replace after PixelNiti social pages are created.
 
 ## 📦 Deployment to Vercel
 

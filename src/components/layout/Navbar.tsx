@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
@@ -41,11 +42,17 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 group">
-          <div className="relative flex items-center justify-center w-8 h-8 rounded-md bg-gradient-to-br from-primary to-accent text-white shadow-lg group-hover:shadow-primary/20 transition-shadow">
-            <span className="font-bold text-lg leading-none">P</span>
-          </div>
-          <span className="font-bold text-xl tracking-tight">PixelNiti</span>
+        <Link href="/" aria-label="PixelNiti home">
+          {/* pixelniti-full-dark-transparent.svg: transparent bg, white/slate text — optimal for dark navbar */}
+          <Image
+            src="/brand/pixelniti-full-dark-transparent.svg"
+            alt="PixelNiti logo"
+            width={101}
+            height={32}
+            className="h-8 w-auto"
+            unoptimized
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}

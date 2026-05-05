@@ -36,7 +36,7 @@ export function Navbar() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50",
         mobileMenuOpen
-          ? "bottom-0 bg-background py-5"
+          ? "bottom-0 bg-background flex flex-col"
           : cn(
               "transition-all duration-300",
               isScrolled
@@ -45,10 +45,15 @@ export function Navbar() {
             )
       )}
     >
-      <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
+      {/* Top bar — logo + nav + hamburger */}
+      <div
+        className={cn(
+          "container mx-auto px-4 md:px-6 flex items-center justify-between",
+          mobileMenuOpen && "py-5"
+        )}
+      >
         {/* Logo */}
         <Link href="/" aria-label="PixelNiti home">
-          {/* pixelniti-full-dark-transparent.svg: transparent bg, white/slate text — optimal for dark navbar */}
           <Image
             src="/brand/pixelniti-full-dark-transparent.svg"
             alt="PixelNiti logo"
@@ -98,15 +103,15 @@ export function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Nav */}
+      {/* Mobile Nav — flex-1 fills remaining height inside the full-screen header */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.2 }}
-            className="absolute inset-x-0 top-full bottom-0 bg-background border-t border-border overflow-y-auto md:hidden"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.15 }}
+            className="flex-1 overflow-y-auto border-t border-border md:hidden"
           >
             <div className="flex flex-col p-4 space-y-4">
               {navLinks.map((link) => (

@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060c18"/>
+      <stop offset="100%" style="stop-color:#0b1422"/>
+    </linearGradient>
+    <linearGradient id="sidebar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a0f1e"/>
+      <stop offset="100%" style="stop-color:#0d1424"/>
+    </linearGradient>
+    <linearGradient id="statblue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1b4b"/>
+      <stop offset="100%" style="stop-color:#312e81"/>
+    </linearGradient>
+    <linearGradient id="statteal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f4c3f"/>
+      <stop offset="100%" style="stop-color:#065f46"/>
+    </linearGradient>
+    <filter id="sh" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <defs>
+    <pattern id="g" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#fff" stroke-width="0.3" stroke-opacity="0.03"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="600" fill="url(#g)"/>
+
+  <!-- Main window -->
+  <rect x="60" y="24" width="1080" height="552" rx="12" fill="#0c1220" stroke="#1a2540" stroke-width="1" filter="url(#sh)"/>
+
+  <!-- Top chrome bar -->
+  <rect x="60" y="24" width="1080" height="38" rx="12" fill="#0f1828"/>
+  <rect x="60" y="50" width="1080" height="12" fill="#0f1828"/>
+  <circle cx="86" cy="43" r="5.5" fill="#ff5f57"/>
+  <circle cx="104" cy="43" r="5.5" fill="#febc2e"/>
+  <circle cx="122" cy="43" r="5.5" fill="#28c840"/>
+  <rect x="180" y="33" width="420" height="18" rx="9" fill="#1a2540"/>
+  <text x="196" y="46" fill="#475569" font-size="9" font-family="system-ui">🔒  clinic.portal.app/dashboard</text>
+
+  <!-- Sidebar -->
+  <rect x="60" y="62" width="200" height="514" fill="url(#sidebar)" stroke="#1a2540" stroke-width="0.5"/>
+
+  <!-- Sidebar logo -->
+  <rect x="78" y="80" width="32" height="32" rx="8" fill="#0e7490"/>
+  <text x="94" y="100" fill="#fff" font-size="14" font-weight="800" font-family="system-ui" text-anchor="middle">+</text>
+  <text x="122" y="96" fill="#e2e8f0" font-size="11" font-weight="700" font-family="system-ui">MediCare</text>
+  <text x="122" y="108" fill="#475569" font-size="8" font-family="system-ui">Clinic Portal</text>
+
+  <!-- Sidebar nav items -->
+  <rect x="72" y="130" width="176" height="32" rx="7" fill="#6366f1" fill-opacity="0.15"/>
+  <text x="90" y="150" fill="#6366f1" font-size="11" font-family="system-ui">⬛ Dashboard</text>
+
+  <text x="90" y="182" fill="#475569" font-size="11" font-family="system-ui">📅 Appointments</text>
+  <rect x="224" y="172" width="18" height="14" rx="7" fill="#ef4444"/>
+  <text x="233" y="183" fill="#fff" font-size="8" font-weight="600" font-family="system-ui" text-anchor="middle">5</text>
+
+  <text x="90" y="214" fill="#475569" font-size="11" font-family="system-ui">👤 Patients</text>
+  <text x="90" y="246" fill="#475569" font-size="11" font-family="system-ui">🩺 Doctors</text>
+  <text x="90" y="278" fill="#475569" font-size="11" font-family="system-ui">💊 Pharmacy</text>
+  <text x="90" y="310" fill="#475569" font-size="11" font-family="system-ui">📊 Reports</text>
+  <text x="90" y="342" fill="#475569" font-size="11" font-family="system-ui">⚙️ Settings</text>
+
+  <!-- Sidebar separator -->
+  <line x1="72" y1="480" x2="248" y2="480" stroke="#1e293b" stroke-width="0.5"/>
+
+  <!-- Doctor profile in sidebar -->
+  <circle cx="94" cy="510" r="16" fill="#1e293b" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="94" y="516" fill="#818cf8" font-size="12" text-anchor="middle">👨‍⚕️</text>
+  <text x="116" y="507" fill="#e2e8f0" font-size="10" font-weight="600" font-family="system-ui">Dr. Admin</text>
+  <text x="116" y="520" fill="#475569" font-size="9" font-family="system-ui">Super Admin</text>
+
+  <!-- Main content area -->
+  <!-- Header -->
+  <text x="280" y="90" fill="#e2e8f0" font-size="16" font-weight="700" font-family="system-ui">Dashboard Overview</text>
+  <text x="280" y="108" fill="#475569" font-size="10" font-family="system-ui">Monday, 5 May 2025 · All Departments</text>
+
+  <!-- WhatsApp notification button -->
+  <rect x="960" y="76" width="160" height="30" rx="8" fill="#128C7E" fill-opacity="0.2" stroke="#128C7E" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1040" y="95" fill="#25D366" font-size="10" font-weight="600" font-family="system-ui" text-anchor="middle">📱 WhatsApp Alerts</text>
+
+  <!-- Stat cards row -->
+  <!-- Stat 1 -->
+  <rect x="280" y="122" width="185" height="84" rx="10" fill="url(#statblue)" stroke="#312e81" stroke-width="0.5"/>
+  <text x="296" y="146" fill="#818cf8" font-size="10" font-family="system-ui">Total Patients</text>
+  <text x="296" y="176" fill="#e2e8f0" font-size="26" font-weight="800" font-family="system-ui">1,248</text>
+  <text x="296" y="196" fill="#6366f1" font-size="9" font-family="system-ui">▲ +34 this week</text>
+
+  <!-- Stat 2 -->
+  <rect x="477" y="122" width="185" height="84" rx="10" fill="#0c2a1e" stroke="#065f46" stroke-width="0.5"/>
+  <text x="493" y="146" fill="#6ee7b7" font-size="10" font-family="system-ui">Today's Appointments</text>
+  <text x="493" y="176" fill="#e2e8f0" font-size="26" font-weight="800" font-family="system-ui">34</text>
+  <text x="493" y="196" fill="#10b981" font-size="9" font-family="system-ui">▲ 8 remaining</text>
+
+  <!-- Stat 3 -->
+  <rect x="674" y="122" width="185" height="84" rx="10" fill="#1a1207" stroke="#92400e" stroke-width="0.5"/>
+  <text x="690" y="146" fill="#fbbf24" font-size="10" font-family="system-ui">Doctors Available</text>
+  <text x="690" y="176" fill="#e2e8f0" font-size="26" font-weight="800" font-family="system-ui">12</text>
+  <text x="690" y="196" fill="#f59e0b" font-size="9" font-family="system-ui">3 on leave today</text>
+
+  <!-- Stat 4 -->
+  <rect x="871" y="122" width="249" height="84" rx="10" fill="#0c1a2e" stroke="#1e3a5f" stroke-width="0.5"/>
+  <text x="887" y="146" fill="#93c5fd" font-size="10" font-family="system-ui">Patient Satisfaction</text>
+  <text x="887" y="176" fill="#e2e8f0" font-size="26" font-weight="800" font-family="system-ui">98%</text>
+  <text x="887" y="196" fill="#60a5fa" font-size="9" font-family="system-ui">★ ★ ★ ★ ★  4.9 avg rating</text>
+
+  <!-- Appointments table -->
+  <rect x="280" y="220" width="610" height="344" rx="10" fill="#0b1628" stroke="#1a2540" stroke-width="1"/>
+  <text x="296" y="244" fill="#e2e8f0" font-size="12" font-weight="700" font-family="system-ui">Today's Appointments</text>
+
+  <!-- Table header -->
+  <rect x="280" y="254" width="610" height="28" fill="#0f1d30"/>
+  <text x="296" y="272" fill="#475569" font-size="9" font-weight="600" font-family="system-ui">PATIENT</text>
+  <text x="430" y="272" fill="#475569" font-size="9" font-weight="600" font-family="system-ui">DOCTOR</text>
+  <text x="560" y="272" fill="#475569" font-size="9" font-weight="600" font-family="system-ui">TIME</text>
+  <text x="660" y="272" fill="#475569" font-size="9" font-weight="600" font-family="system-ui">STATUS</text>
+  <text x="770" y="272" fill="#475569" font-size="9" font-weight="600" font-family="system-ui">DEPT</text>
+
+  <!-- Table rows -->
+  <!-- Row 1 -->
+  <rect x="280" y="282" width="610" height="38" fill="#0b1628"/>
+  <circle cx="304" cy="301" r="10" fill="#1e3a5f"/>
+  <text x="304" y="306" fill="#93c5fd" font-size="9" text-anchor="middle">RS</text>
+  <text x="322" y="298" fill="#e2e8f0" font-size="10" font-weight="500" font-family="system-ui">Rahul Sharma</text>
+  <text x="322" y="311" fill="#475569" font-size="8" font-family="system-ui">P-00412</text>
+  <text x="430" y="303" fill="#94a3b8" font-size="10" font-family="system-ui">Dr. Anjali Mehta</text>
+  <text x="560" y="303" fill="#94a3b8" font-size="10" font-family="system-ui">09:30 AM</text>
+  <rect x="652" y="292" width="68" height="18" rx="9" fill="#065f46"/>
+  <text x="686" y="304" fill="#6ee7b7" font-size="9" font-weight="600" font-family="system-ui" text-anchor="middle">Confirmed</text>
+  <text x="770" y="303" fill="#94a3b8" font-size="9" font-family="system-ui">Cardio</text>
+
+  <!-- Row 2 -->
+  <rect x="280" y="320" width="610" height="38" fill="#0c1930" fill-opacity="0.5"/>
+  <circle cx="304" cy="339" r="10" fill="#2d1b4e"/>
+  <text x="304" y="344" fill="#a78bfa" font-size="9" text-anchor="middle">PK</text>
+  <text x="322" y="336" fill="#e2e8f0" font-size="10" font-weight="500" font-family="system-ui">Priya Kapoor</text>
+  <text x="322" y="349" fill="#475569" font-size="8" font-family="system-ui">P-00398</text>
+  <text x="430" y="341" fill="#94a3b8" font-size="10" font-family="system-ui">Dr. Rohan Patel</text>
+  <text x="560" y="341" fill="#94a3b8" font-size="10" font-family="system-ui">10:15 AM</text>
+  <rect x="652" y="330" width="58" height="18" rx="9" fill="#7c3aed" fill-opacity="0.3" stroke="#7c3aed" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="681" y="342" fill="#a78bfa" font-size="9" font-weight="600" font-family="system-ui" text-anchor="middle">Pending</text>
+  <text x="770" y="341" fill="#94a3b8" font-size="9" font-family="system-ui">Ortho</text>
+
+  <!-- Row 3 -->
+  <rect x="280" y="358" width="610" height="38" fill="#0b1628"/>
+  <circle cx="304" cy="377" r="10" fill="#1e3a5f"/>
+  <text x="304" y="382" fill="#93c5fd" font-size="9" text-anchor="middle">AM</text>
+  <text x="322" y="374" fill="#e2e8f0" font-size="10" font-weight="500" font-family="system-ui">Amit Mishra</text>
+  <text x="322" y="387" fill="#475569" font-size="8" font-family="system-ui">P-00403</text>
+  <text x="430" y="379" fill="#94a3b8" font-size="10" font-family="system-ui">Dr. Sneha Iyer</text>
+  <text x="560" y="379" fill="#94a3b8" font-size="10" font-family="system-ui">11:00 AM</text>
+  <rect x="652" y="368" width="72" height="18" rx="9" fill="#0f3d32"/>
+  <text x="688" y="380" fill="#6ee7b7" font-size="9" font-weight="600" font-family="system-ui" text-anchor="middle">Completed</text>
+  <text x="770" y="379" fill="#94a3b8" font-size="9" font-family="system-ui">General</text>
+
+  <!-- Row 4 -->
+  <rect x="280" y="396" width="610" height="38" fill="#0c1930" fill-opacity="0.5"/>
+  <circle cx="304" cy="415" r="10" fill="#1a2e12"/>
+  <text x="304" y="420" fill="#86efac" font-size="9" text-anchor="middle">SJ</text>
+  <text x="322" y="412" fill="#e2e8f0" font-size="10" font-weight="500" font-family="system-ui">Sunita Joshi</text>
+  <text x="322" y="425" fill="#475569" font-size="8" font-family="system-ui">P-00419</text>
+  <text x="430" y="417" fill="#94a3b8" font-size="10" font-family="system-ui">Dr. Vikram Rao</text>
+  <text x="560" y="417" fill="#94a3b8" font-size="10" font-family="system-ui">02:30 PM</text>
+  <rect x="652" y="406" width="68" height="18" rx="9" fill="#065f46"/>
+  <text x="686" y="418" fill="#6ee7b7" font-size="9" font-weight="600" font-family="system-ui" text-anchor="middle">Confirmed</text>
+  <text x="770" y="417" fill="#94a3b8" font-size="9" font-family="system-ui">Neuro</text>
+
+  <!-- Row 5 -->
+  <rect x="280" y="434" width="610" height="38" fill="#0b1628"/>
+  <circle cx="304" cy="453" r="10" fill="#3b1f0a"/>
+  <text x="304" y="458" fill="#fbbf24" font-size="9" text-anchor="middle">DG</text>
+  <text x="322" y="450" fill="#e2e8f0" font-size="10" font-weight="500" font-family="system-ui">Dev Gupta</text>
+  <text x="322" y="463" fill="#475569" font-size="8" font-family="system-ui">P-00427</text>
+  <text x="430" y="455" fill="#94a3b8" font-size="10" font-family="system-ui">Dr. Anjali Mehta</text>
+  <text x="560" y="455" fill="#94a3b8" font-size="10" font-family="system-ui">04:00 PM</text>
+  <rect x="652" y="444" width="58" height="18" rx="9" fill="#7c3aed" fill-opacity="0.3" stroke="#7c3aed" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="681" y="456" fill="#a78bfa" font-size="9" font-weight="600" font-family="system-ui" text-anchor="middle">Pending</text>
+  <text x="770" y="455" fill="#94a3b8" font-size="9" font-family="system-ui">Cardio</text>
+
+  <!-- View all -->
+  <text x="750" y="550" fill="#6366f1" font-size="10" font-weight="600" font-family="system-ui" text-anchor="end">View all appointments →</text>
+
+  <!-- Right panel: Doctor cards -->
+  <rect x="906" y="220" width="214" height="344" rx="10" fill="#0b1628" stroke="#1a2540" stroke-width="1"/>
+  <text x="922" y="244" fill="#e2e8f0" font-size="11" font-weight="700" font-family="system-ui">Doctors On Duty</text>
+
+  <!-- Doctor 1 -->
+  <rect x="916" y="254" width="193" height="72" rx="8" fill="#0e1f38"/>
+  <circle cx="938" cy="290" r="16" fill="#1e3a5f" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="938" y="295" fill="#818cf8" font-size="12" text-anchor="middle">👩‍⚕️</text>
+  <text x="962" y="282" fill="#e2e8f0" font-size="10" font-weight="600" font-family="system-ui">Dr. Anjali Mehta</text>
+  <text x="962" y="294" fill="#475569" font-size="8" font-family="system-ui">Cardiologist</text>
+  <rect x="962" y="302" width="48" height="14" rx="7" fill="#065f46"/>
+  <text x="986" y="312" fill="#6ee7b7" font-size="8" font-weight="600" font-family="system-ui" text-anchor="middle">Available</text>
+
+  <!-- Doctor 2 -->
+  <rect x="916" y="334" width="193" height="72" rx="8" fill="#0e1f38"/>
+  <circle cx="938" cy="370" r="16" fill="#1e3a5f" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="938" y="375" fill="#a78bfa" font-size="12" text-anchor="middle">👨‍⚕️</text>
+  <text x="962" y="362" fill="#e2e8f0" font-size="10" font-weight="600" font-family="system-ui">Dr. Rohan Patel</text>
+  <text x="962" y="374" fill="#475569" font-size="8" font-family="system-ui">Orthopaedic</text>
+  <rect x="962" y="382" width="48" height="14" rx="7" fill="#065f46"/>
+  <text x="986" y="392" fill="#6ee7b7" font-size="8" font-weight="600" font-family="system-ui" text-anchor="middle">Available</text>
+
+  <!-- Doctor 3 -->
+  <rect x="916" y="414" width="193" height="72" rx="8" fill="#0e1f38"/>
+  <circle cx="938" cy="450" r="16" fill="#3b1f0a" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="938" y="455" fill="#fbbf24" font-size="12" text-anchor="middle">👨‍⚕️</text>
+  <text x="962" y="442" fill="#e2e8f0" font-size="10" font-weight="600" font-family="system-ui">Dr. Vikram Rao</text>
+  <text x="962" y="454" fill="#475569" font-size="8" font-family="system-ui">Neurologist</text>
+  <rect x="962" y="462" width="42" height="14" rx="7" fill="#7c2d12" fill-opacity="0.5" stroke="#c2410c" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="983" y="472" fill="#fb923c" font-size="8" font-weight="600" font-family="system-ui" text-anchor="middle">On Call</text>
+
+  <!-- WhatsApp notification reminder -->
+  <rect x="906" y="502" width="214" height="50" rx="8" fill="#0a1e16" stroke="#128C7E" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="922" y="522" fill="#25D366" font-size="10" font-weight="600" font-family="system-ui">📱 WhatsApp Reminders</text>
+  <text x="922" y="538" fill="#475569" font-size="9" font-family="system-ui">Auto-sent 1hr before appointment</text>
+</svg>

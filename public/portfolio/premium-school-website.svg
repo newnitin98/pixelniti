@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080d1a"/>
+      <stop offset="100%" style="stop-color:#0d1526"/>
+    </linearGradient>
+    <linearGradient id="hero1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1b4b"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+    <linearGradient id="btn1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <filter id="shadow1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="600" fill="url(#bg1)"/>
+
+  <!-- Subtle grid -->
+  <defs>
+    <pattern id="grid1" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="0.3" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="600" fill="url(#grid1)"/>
+
+  <!-- Browser window -->
+  <rect x="80" y="30" width="1040" height="540" rx="12" fill="#0c1222" stroke="#1e293b" stroke-width="1" filter="url(#shadow1)"/>
+
+  <!-- Browser chrome bar -->
+  <rect x="80" y="30" width="1040" height="40" rx="12" fill="#111827"/>
+  <rect x="80" y="54" width="1040" height="16" fill="#111827"/>
+
+  <!-- Window dots -->
+  <circle cx="108" cy="50" r="6" fill="#ff5f57"/>
+  <circle cx="128" cy="50" r="6" fill="#febc2e"/>
+  <circle cx="148" cy="50" r="6" fill="#28c840"/>
+
+  <!-- URL bar -->
+  <rect x="200" y="38" width="500" height="22" rx="11" fill="#1e293b"/>
+  <text x="220" y="53" fill="#64748b" font-size="10" font-family="system-ui, sans-serif">🔒  brightacademy.edu.in</text>
+
+  <!-- Nav bar -->
+  <rect x="80" y="70" width="1040" height="48" fill="#0f172a" stroke="#1e293b" stroke-width="0.5"/>
+
+  <!-- School logo placeholder -->
+  <rect x="106" y="82" width="28" height="28" rx="6" fill="#6366f1"/>
+  <text x="120" y="100" fill="#fff" font-size="11" font-weight="bold" font-family="system-ui" text-anchor="middle">B</text>
+  <text x="148" y="98" fill="#e2e8f0" font-size="12" font-weight="700" font-family="system-ui">Bright Academy</text>
+
+  <!-- Nav links -->
+  <text x="380" y="98" fill="#94a3b8" font-size="11" font-family="system-ui">Home</text>
+  <text x="440" y="98" fill="#94a3b8" font-size="11" font-family="system-ui">About</text>
+  <text x="500" y="98" fill="#94a3b8" font-size="11" font-family="system-ui">Academics</text>
+  <text x="590" y="98" fill="#6366f1" font-size="11" font-weight="600" font-family="system-ui">Admissions</text>
+  <text x="668" y="98" fill="#94a3b8" font-size="11" font-family="system-ui">Contact</text>
+
+  <!-- Admission CTA button in nav -->
+  <rect x="990" y="82" width="110" height="28" rx="6" fill="url(#btn1)"/>
+  <text x="1045" y="100" fill="#fff" font-size="11" font-weight="600" font-family="system-ui" text-anchor="middle">Apply Now →</text>
+
+  <!-- Hero section -->
+  <rect x="80" y="118" width="1040" height="240" fill="url(#hero1)"/>
+
+  <!-- Hero grid dots -->
+  <defs>
+    <pattern id="dotgrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.8" fill="#6366f1" opacity="0.25"/>
+    </pattern>
+  </defs>
+  <rect x="80" y="118" width="1040" height="240" fill="url(#dotgrid)"/>
+
+  <!-- Accent glow -->
+  <ellipse cx="400" cy="240" rx="200" ry="80" fill="#6366f1" opacity="0.06"/>
+
+  <!-- Hero badge -->
+  <rect x="114" y="140" width="170" height="22" rx="11" fill="#6366f1" fill-opacity="0.15" stroke="#6366f1" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="200" y="155" fill="#818cf8" font-size="10" font-weight="600" font-family="system-ui" text-anchor="middle">CBSE Affiliated · Est. 2005</text>
+
+  <!-- Hero headline -->
+  <text x="114" y="198" fill="#e2e8f0" font-size="30" font-weight="800" font-family="system-ui, sans-serif">Building Tomorrow's</text>
+  <text x="114" y="232" fill="#6366f1" font-size="30" font-weight="800" font-family="system-ui, sans-serif">Leaders.</text>
+
+  <!-- Hero subtext -->
+  <text x="114" y="262" fill="#64748b" font-size="12" font-family="system-ui">A premier institution committed to academic excellence, character, and holistic development.</text>
+
+  <!-- Hero CTAs -->
+  <rect x="114" y="282" width="150" height="36" rx="8" fill="url(#btn1)"/>
+  <text x="189" y="304" fill="#fff" font-size="12" font-weight="600" font-family="system-ui" text-anchor="middle">Apply for 2025–26</text>
+  <rect x="278" y="282" width="130" height="36" rx="8" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="343" y="304" fill="#818cf8" font-size="12" font-weight="500" font-family="system-ui" text-anchor="middle">Download Brochure</text>
+
+  <!-- Right side image placeholder in hero -->
+  <rect x="720" y="128" width="380" height="218" rx="10" fill="#1e293b" fill-opacity="0.5"/>
+  <rect x="730" y="138" width="360" height="120" rx="6" fill="#1e293b"/>
+  <text x="910" y="210" fill="#334155" font-size="14" font-family="system-ui" text-anchor="middle">📸 Campus Hero</text>
+  <rect x="730" y="268" width="110" height="70" rx="6" fill="#1e2540"/>
+  <rect x="850" y="268" width="110" height="70" rx="6" fill="#1e2540"/>
+  <rect x="970" y="268" width="110" height="70" rx="6" fill="#1e2540"/>
+  <text x="785" y="305" fill="#64748b" font-size="9" font-family="system-ui" text-anchor="middle">98% Board Results</text>
+  <text x="905" y="305" fill="#64748b" font-size="9" font-family="system-ui" text-anchor="middle">500+ Students</text>
+  <text x="1025" y="305" fill="#64748b" font-size="9" font-family="system-ui" text-anchor="middle">20+ Activities</text>
+
+  <!-- Section divider -->
+  <line x1="80" y1="358" x2="1120" y2="358" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Three cards section -->
+  <text x="114" y="386" fill="#64748b" font-size="11" font-weight="600" font-family="system-ui" letter-spacing="2">WHY BRIGHT ACADEMY</text>
+
+  <!-- Card 1: Academics -->
+  <rect x="114" y="400" width="290" height="128" rx="10" fill="#0f1829" stroke="#1e293b" stroke-width="1"/>
+  <rect x="126" y="412" width="36" height="36" rx="8" fill="#6366f1" fill-opacity="0.15"/>
+  <text x="144" y="435" fill="#6366f1" font-size="18" text-anchor="middle">🎓</text>
+  <text x="126" y="462" fill="#e2e8f0" font-size="13" font-weight="700" font-family="system-ui">Academics</text>
+  <text x="126" y="480" fill="#64748b" font-size="10" font-family="system-ui">CBSE curriculum with smart</text>
+  <text x="126" y="494" fill="#64748b" font-size="10" font-family="system-ui">classrooms and AI learning tools.</text>
+  <text x="126" y="516" fill="#6366f1" font-size="10" font-weight="600" font-family="system-ui">View Programs →</text>
+
+  <!-- Card 2: Faculty -->
+  <rect x="424" y="400" width="290" height="128" rx="10" fill="#0f1829" stroke="#1e293b" stroke-width="1"/>
+  <rect x="436" y="412" width="36" height="36" rx="8" fill="#8b5cf6" fill-opacity="0.15"/>
+  <text x="454" y="435" fill="#8b5cf6" font-size="18" text-anchor="middle">👨‍🏫</text>
+  <text x="436" y="462" fill="#e2e8f0" font-size="13" font-weight="700" font-family="system-ui">Expert Faculty</text>
+  <text x="436" y="480" fill="#64748b" font-size="10" font-family="system-ui">50+ experienced educators with</text>
+  <text x="436" y="494" fill="#64748b" font-size="10" font-family="system-ui">post-graduate qualifications.</text>
+  <text x="436" y="516" fill="#8b5cf6" font-size="10" font-weight="600" font-family="system-ui">Meet the Team →</text>
+
+  <!-- Card 3: Events -->
+  <rect x="734" y="400" width="372" height="128" rx="10" fill="#0f1829" stroke="#1e293b" stroke-width="1"/>
+  <rect x="746" y="412" width="36" height="36" rx="8" fill="#10b981" fill-opacity="0.15"/>
+  <text x="764" y="435" fill="#10b981" font-size="18" text-anchor="middle">📅</text>
+  <text x="746" y="462" fill="#e2e8f0" font-size="13" font-weight="700" font-family="system-ui">Upcoming Events</text>
+  <rect x="746" y="470" width="340" height="18" rx="4" fill="#0d1526"/>
+  <text x="756" y="483" fill="#64748b" font-size="9" font-family="system-ui">Annual Science Fair — Dec 15, 2025</text>
+  <rect x="746" y="492" width="340" height="18" rx="4" fill="#0d1526"/>
+  <text x="756" y="505" fill="#64748b" font-size="9" font-family="system-ui">Admission Open Day — Jan 8, 2026</text>
+  <text x="746" y="524" fill="#10b981" font-size="10" font-weight="600" font-family="system-ui">View All Events →</text>
+</svg>

@@ -5,6 +5,7 @@ export interface PortfolioItem {
   description: string;
   tags: string[];
   highlight: string;
+  image?: string;
 }
 
 export const portfolioData: PortfolioItem[] = [
@@ -16,6 +17,7 @@ export const portfolioData: PortfolioItem[] = [
       "Full institutional website with admission inquiry forms, faculty profiles, event calendar, and technical SEO setup for a private CBSE school.",
     tags: ["Next.js", "Tailwind CSS", "SEO", "Forms"],
     highlight: "Designed to increase admission inquiries through structured forms, clear CTAs, and local SEO setup.",
+    image: "/portfolio/premium-school-website.svg",
   },
   {
     id: "clinic-dashboard",
@@ -25,6 +27,7 @@ export const portfolioData: PortfolioItem[] = [
       "Patient management dashboard with appointment booking, doctor profiles, and WhatsApp notification integration for a private clinic group.",
     tags: ["React", "Dashboard", "WhatsApp API", "Database"],
     highlight: "Designed to reduce manual appointment handling through booking forms, WhatsApp notifications, and admin workflows.",
+    image: "/portfolio/multi-specialty-clinic-portal.svg",
   },
   {
     id: "real-estate-ai",
@@ -34,6 +37,7 @@ export const portfolioData: PortfolioItem[] = [
       "An AI-powered property enquiry agent integrated into a rental listing website, qualifying leads 24/7 and routing hot prospects to the sales team.",
     tags: ["AI Agent", "Lead Qualification", "Real Estate"],
     highlight: "Captured and qualified leads automatically outside business hours.",
+    image: "/portfolio/real-estate-ai-agent.svg",
   },
   {
     id: "salon-booking",
@@ -43,6 +47,7 @@ export const portfolioData: PortfolioItem[] = [
       "Online service catalog and appointment booking flow for a premium hair salon, with WhatsApp confirmation and Google Maps integration.",
     tags: ["Booking System", "WhatsApp", "Local SEO"],
     highlight: "Walk-in traffic converted to pre-scheduled appointments.",
+    image: "/portfolio/salon-booking-flow.svg",
   },
   {
     id: "jewellery-ecommerce",
@@ -52,6 +57,7 @@ export const portfolioData: PortfolioItem[] = [
       "End-to-end UX design for a jewellery e-commerce experience, including product zoom, smart filter system, and a trust-first checkout flow.",
     tags: ["E-Commerce", "UI/UX", "Design System", "Figma"],
     highlight: "Cart abandonment reduced through trust-focused checkout redesign.",
+    image: "/portfolio/jewellery-ecommerce-ux.svg",
   },
   {
     id: "workflow-automation",
@@ -61,5 +67,6 @@ export const portfolioData: PortfolioItem[] = [
       "Automated a 6-step manual onboarding flow for a B2B services company using webhook integrations, email sequences, and a CRM connector.",
     tags: ["Automation", "CRM", "Webhooks", "Email"],
     highlight: "Designed to reduce repetitive administrative work through webhook integrations, email automation, and CRM sync.",
+    image: "/portfolio/internal-operations-automation.svg",
   },
 ];

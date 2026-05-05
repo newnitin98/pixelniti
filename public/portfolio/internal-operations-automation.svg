@@ -1,0 +1,288 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060a14"/>
+      <stop offset="100%" style="stop-color:#0b1020"/>
+    </linearGradient>
+    <linearGradient id="nodeblu" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1b4b"/>
+      <stop offset="100%" style="stop-color:#312e81"/>
+    </linearGradient>
+    <linearGradient id="nodegreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#064e3b"/>
+      <stop offset="100%" style="stop-color:#065f46"/>
+    </linearGradient>
+    <linearGradient id="nodepurp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2e1065"/>
+      <stop offset="100%" style="stop-color:#4c1d95"/>
+    </linearGradient>
+    <linearGradient id="nodeamb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#451a03"/>
+      <stop offset="100%" style="stop-color:#78350f"/>
+    </linearGradient>
+    <linearGradient id="pulse" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1" stop-opacity="0"/>
+      <stop offset="50%" style="stop-color:#6366f1" stop-opacity="1"/>
+      <stop offset="100%" style="stop-color:#6366f1" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="header" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0f0d1e"/>
+      <stop offset="100%" style="stop-color:#0c1020"/>
+    </linearGradient>
+    <filter id="sh">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow2">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#fff" stroke-width="0.3" stroke-opacity="0.03"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="600" fill="url(#grid)"/>
+
+  <!-- Ambient glows -->
+  <ellipse cx="300" cy="300" rx="150" ry="80" fill="#6366f1" opacity="0.05"/>
+  <ellipse cx="900" cy="300" rx="150" ry="80" fill="#10b981" opacity="0.05"/>
+  <ellipse cx="600" cy="300" rx="200" ry="60" fill="#8b5cf6" opacity="0.04"/>
+
+  <!-- Window -->
+  <rect x="55" y="20" width="1090" height="560" rx="12" fill="#090e1c" stroke="#1a2240" stroke-width="1" filter="url(#sh)"/>
+
+  <!-- Chrome bar -->
+  <rect x="55" y="20" width="1090" height="38" rx="12" fill="url(#header)"/>
+  <rect x="55" y="46" width="1090" height="12" fill="url(#header)"/>
+  <circle cx="81" cy="39" r="5.5" fill="#ff5f57"/>
+  <circle cx="99" cy="39" r="5.5" fill="#febc2e"/>
+  <circle cx="117" cy="39" r="5.5" fill="#28c840"/>
+  <rect x="173" y="28" width="500" height="18" rx="9" fill="#111827"/>
+  <text x="189" y="41" fill="#374151" font-size="9" font-family="system-ui">🔒  ops.pixelniti.app/workflows/onboarding-automation</text>
+  <rect x="1050" y="28" width="84" height="18" rx="9" fill="#065f46"/>
+  <text x="1092" y="41" fill="#6ee7b7" font-size="9" font-weight="600" font-family="system-ui" text-anchor="middle">● Live · Running</text>
+
+  <!-- Top header bar -->
+  <rect x="55" y="58" width="1090" height="52" fill="#0c1124" stroke="#1a2240" stroke-width="0.5"/>
+  <text x="78" y="82" fill="#e2e8f0" font-size="15" font-weight="700" font-family="system-ui">B2B Onboarding Automation Pipeline</text>
+  <text x="78" y="98" fill="#475569" font-size="10" font-family="system-ui">6-step workflow · Webhook → CRM → Email · Last run: 2 min ago</text>
+
+  <!-- Status pills top right -->
+  <rect x="920" y="68" width="90" height="24" rx="8" fill="#064e3b" stroke="#065f46" stroke-width="1"/>
+  <text x="965" y="84" fill="#6ee7b7" font-size="10" font-weight="600" font-family="system-ui" text-anchor="middle">92% Saved</text>
+  <rect x="1018" y="68" width="116" height="24" rx="8" fill="#1e1b4b" stroke="#4338ca" stroke-width="1"/>
+  <text x="1076" y="84" fill="#818cf8" font-size="10" font-weight="600" font-family="system-ui" text-anchor="middle">1,240 Runs / mo</text>
+
+  <!-- ── FLOW DIAGRAM ── -->
+  <!-- Connection lines between nodes -->
+  <!-- Line 1→2 -->
+  <line x1="218" y1="230" x2="306" y2="230" stroke="#6366f1" stroke-width="2" stroke-opacity="0.5"/>
+  <rect x="240" y="225" width="40" height="10" rx="5" fill="url(#pulse)" opacity="0.7"/>
+  <!-- Line 2→3 -->
+  <line x1="428" y1="230" x2="516" y2="230" stroke="#6366f1" stroke-width="2" stroke-opacity="0.5"/>
+  <rect x="450" y="225" width="40" height="10" rx="5" fill="url(#pulse)" opacity="0.7"/>
+  <!-- Line 3→4 -->
+  <line x1="638" y1="230" x2="726" y2="230" stroke="#8b5cf6" stroke-width="2" stroke-opacity="0.5"/>
+  <rect x="660" y="225" width="40" height="10" rx="5" fill="url(#pulse)" opacity="0.5"/>
+  <!-- Line 4→5 -->
+  <line x1="848" y1="230" x2="936" y2="230" stroke="#f59e0b" stroke-width="2" stroke-opacity="0.5"/>
+  <!-- Line 5→6 -->
+  <line x1="1060" y1="230" x2="1090" y2="230" stroke="#10b981" stroke-width="2" stroke-opacity="0.4"/>
+  <line x1="1090" y1="220" x2="1090" y2="240" stroke="#10b981" stroke-width="2" stroke-opacity="0.4"/>
+
+  <!-- Arrow heads -->
+  <polygon points="306,226 298,222 298,234" fill="#6366f1" opacity="0.7"/>
+  <polygon points="516,226 508,222 508,234" fill="#6366f1" opacity="0.7"/>
+  <polygon points="726,226 718,222 718,234" fill="#8b5cf6" opacity="0.7"/>
+  <polygon points="936,226 928,222 928,234" fill="#f59e0b" opacity="0.6"/>
+
+  <!-- NODE 1: Form Submit -->
+  <rect x="80" y="185" width="138" height="90" rx="12" fill="url(#nodeblu)" stroke="#4338ca" stroke-width="1.5"/>
+  <rect x="80" y="185" width="138" height="4" rx="2" fill="#6366f1"/>
+  <rect x="92" y="197" width="32" height="32" rx="8" fill="#3730a3" fill-opacity="0.6"/>
+  <text x="108" y="218" fill="#818cf8" font-size="18" text-anchor="middle">📝</text>
+  <text x="132" y="210" fill="#e2e8f0" font-size="11" font-weight="700" font-family="system-ui">Form Submit</text>
+  <text x="132" y="224" fill="#818cf8" font-size="9" font-family="system-ui">Trigger event</text>
+  <rect x="92" y="240" width="114" height="26" rx="6" fill="#0a0e1c"/>
+  <text x="149" y="257" fill="#475569" font-size="9" font-family="system-ui" text-anchor="middle">✓ 1,240 triggers / mo</text>
+  <!-- Step badge -->
+  <circle cx="80" cy="185" r="11" fill="#6366f1" stroke="#090e1c" stroke-width="2"/>
+  <text x="80" y="189" fill="#fff" font-size="9" font-weight="700" font-family="system-ui" text-anchor="middle">1</text>
+
+  <!-- NODE 2: Webhook -->
+  <rect x="306" y="185" width="122" height="90" rx="12" fill="#0f1d30" stroke="#1e3a60" stroke-width="1.5"/>
+  <rect x="306" y="185" width="122" height="4" rx="2" fill="#3b82f6"/>
+  <rect x="318" y="197" width="32" height="32" rx="8" fill="#1e3a60"/>
+  <text x="334" y="218" fill="#60a5fa" font-size="18" text-anchor="middle">⚡</text>
+  <text x="358" y="210" fill="#e2e8f0" font-size="11" font-weight="700" font-family="system-ui">Webhook</text>
+  <text x="358" y="224" fill="#60a5fa" font-size="9" font-family="system-ui">Parse payload</text>
+  <rect x="318" y="240" width="100" height="26" rx="6" fill="#0a0e1c"/>
+  <text x="368" y="257" fill="#475569" font-size="9" font-family="system-ui" text-anchor="middle">&lt;120ms avg</text>
+  <circle cx="306" cy="185" r="11" fill="#3b82f6" stroke="#090e1c" stroke-width="2"/>
+  <text x="306" y="189" fill="#fff" font-size="9" font-weight="700" font-family="system-ui" text-anchor="middle">2</text>
+
+  <!-- NODE 3: CRM Sync -->
+  <rect x="516" y="185" width="122" height="90" rx="12" fill="url(#nodepurp)" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="516" y="185" width="122" height="4" rx="2" fill="#8b5cf6"/>
+  <rect x="528" y="197" width="32" height="32" rx="8" fill="#4c1d95" fill-opacity="0.7"/>
+  <text x="544" y="218" fill="#a78bfa" font-size="18" text-anchor="middle">👤</text>
+  <text x="566" y="210" fill="#e2e8f0" font-size="11" font-weight="700" font-family="system-ui">CRM Sync</text>
+  <text x="566" y="224" fill="#a78bfa" font-size="9" font-family="system-ui">Create contact</text>
+  <rect x="528" y="240" width="100" height="26" rx="6" fill="#0a0e1c"/>
+  <text x="578" y="257" fill="#475569" font-size="9" font-family="system-ui" text-anchor="middle">HubSpot · Zoho</text>
+  <circle cx="516" cy="185" r="11" fill="#8b5cf6" stroke="#090e1c" stroke-width="2"/>
+  <text x="516" y="189" fill="#fff" font-size="9" font-weight="700" font-family="system-ui" text-anchor="middle">3</text>
+
+  <!-- NODE 4: Email Sequence -->
+  <rect x="726" y="185" width="122" height="90" rx="12" fill="url(#nodeamb)" stroke="#d97706" stroke-width="1.5"/>
+  <rect x="726" y="185" width="122" height="4" rx="2" fill="#f59e0b"/>
+  <rect x="738" y="197" width="32" height="32" rx="8" fill="#78350f" fill-opacity="0.7"/>
+  <text x="754" y="218" fill="#fbbf24" font-size="18" text-anchor="middle">📧</text>
+  <text x="776" y="210" fill="#e2e8f0" font-size="11" font-weight="700" font-family="system-ui">Email Seq.</text>
+  <text x="776" y="224" fill="#fbbf24" font-size="9" font-family="system-ui">5-step drip</text>
+  <rect x="738" y="240" width="100" height="26" rx="6" fill="#0a0e1c"/>
+  <text x="788" y="257" fill="#475569" font-size="9" font-family="system-ui" text-anchor="middle">68% open rate</text>
+  <circle cx="726" cy="185" r="11" fill="#f59e0b" stroke="#090e1c" stroke-width="2"/>
+  <text x="726" y="189" fill="#0a0e1c" font-size="9" font-weight="700" font-family="system-ui" text-anchor="middle">4</text>
+
+  <!-- NODE 5: Slack Alert -->
+  <rect x="936" y="185" width="124" height="90" rx="12" fill="#0e1a10" stroke="#15803d" stroke-width="1.5"/>
+  <rect x="936" y="185" width="124" height="4" rx="2" fill="#22c55e"/>
+  <rect x="948" y="197" width="32" height="32" rx="8" fill="#14532d" fill-opacity="0.7"/>
+  <text x="964" y="218" fill="#4ade80" font-size="18" text-anchor="middle">🔔</text>
+  <text x="984" y="210" fill="#e2e8f0" font-size="11" font-weight="700" font-family="system-ui">Slack Alert</text>
+  <text x="984" y="224" fill="#4ade80" font-size="9" font-family="system-ui">Sales notified</text>
+  <rect x="948" y="240" width="102" height="26" rx="6" fill="#0a0e1c"/>
+  <text x="999" y="257" fill="#475569" font-size="9" font-family="system-ui" text-anchor="middle">#sales channel</text>
+  <circle cx="936" cy="185" r="11" fill="#22c55e" stroke="#090e1c" stroke-width="2"/>
+  <text x="936" y="189" fill="#0a0e1c" font-size="9" font-weight="700" font-family="system-ui" text-anchor="middle">5</text>
+
+  <!-- NODE 6: Done (right edge checkmark) -->
+  <circle cx="1106" cy="230" r="30" fill="url(#nodegreen)" stroke="#059669" stroke-width="2" filter="url(#glow2)"/>
+  <text x="1106" y="226" fill="#6ee7b7" font-size="22" text-anchor="middle">✓</text>
+  <text x="1106" y="242" fill="#6ee7b7" font-size="8" font-weight="700" font-family="system-ui" text-anchor="middle">Done</text>
+  <circle cx="936" cy="185" r="11" fill="#22c55e" stroke="#090e1c" stroke-width="2"/>
+
+  <!-- ── BOTTOM PANELS ── -->
+
+  <!-- Panel 1: Run log -->
+  <rect x="80" y="300" width="336" height="240" rx="12" fill="#0b1020" stroke="#1a2240" stroke-width="1"/>
+  <text x="98" y="322" fill="#e2e8f0" font-size="12" font-weight="700" font-family="system-ui">Recent Runs</text>
+  <rect x="938" y="312" width="70" height="18" rx="9" fill="#064e3b"/>
+  <text x="973" y="324" fill="#6ee7b7" font-size="9" font-weight="600" font-family="system-ui" text-anchor="middle">All passed ✓</text>
+
+  <!-- Run rows -->
+  <rect x="90" y="334" width="316" height="32" rx="6" fill="#0c1628"/>
+  <circle cx="106" cy="350" r="5" fill="#10b981" filter="url(#glow2)"/>
+  <text x="118" y="346" fill="#e2e8f0" font-size="10" font-family="system-ui">Rajesh Kumar · Info Solutions</text>
+  <text x="118" y="358" fill="#475569" font-size="8" font-family="system-ui">2 min ago · 0.8s · All 5 steps completed</text>
+
+  <rect x="90" y="370" width="316" height="32" rx="6" fill="#0a0e1c"/>
+  <circle cx="106" cy="386" r="5" fill="#10b981"/>
+  <text x="118" y="382" fill="#e2e8f0" font-size="10" font-family="system-ui">Priya Tech Solutions</text>
+  <text x="118" y="394" fill="#475569" font-size="8" font-family="system-ui">14 min ago · 1.1s · Email queued</text>
+
+  <rect x="90" y="406" width="316" height="32" rx="6" fill="#0c1628"/>
+  <circle cx="106" cy="422" r="5" fill="#10b981"/>
+  <text x="118" y="418" fill="#e2e8f0" font-size="10" font-family="system-ui">Nikhil Enterprises</text>
+  <text x="118" y="430" fill="#475569" font-size="8" font-family="system-ui">1 hr ago · 0.9s · CRM contact created</text>
+
+  <rect x="90" y="442" width="316" height="32" rx="6" fill="#0a0e1c"/>
+  <circle cx="106" cy="458" r="5" fill="#f59e0b"/>
+  <text x="118" y="454" fill="#e2e8f0" font-size="10" font-family="system-ui">Meena Global Traders</text>
+  <text x="118" y="466" fill="#475569" font-size="8" font-family="system-ui">2 hr ago · 3.2s · Webhook retry ×1</text>
+
+  <rect x="90" y="478" width="316" height="32" rx="6" fill="#0c1628"/>
+  <circle cx="106" cy="494" r="5" fill="#10b981"/>
+  <text x="118" y="490" fill="#e2e8f0" font-size="10" font-family="system-ui">Arjun Digital Agency</text>
+  <text x="118" y="502" fill="#475569" font-size="8" font-family="system-ui">3 hr ago · 0.7s · All steps completed</text>
+
+  <text x="98" y="532" fill="#6366f1" font-size="9" font-weight="600" font-family="system-ui">View full run history →</text>
+
+  <!-- Panel 2: Integration logos -->
+  <rect x="434" y="300" width="320" height="240" rx="12" fill="#0b1020" stroke="#1a2240" stroke-width="1"/>
+  <text x="452" y="322" fill="#e2e8f0" font-size="12" font-weight="700" font-family="system-ui">Connected Integrations</text>
+
+  <!-- Integration cards (2x3 grid) -->
+  <rect x="444" y="334" width="136" height="60" rx="8" fill="#0d1628"/>
+  <rect x="454" y="344" width="28" height="28" rx="6" fill="#1e3a60"/>
+  <text x="468" y="362" fill="#60a5fa" font-size="14" text-anchor="middle">⚡</text>
+  <text x="490" y="357" fill="#e2e8f0" font-size="10" font-weight="600" font-family="system-ui">Webhook</text>
+  <text x="490" y="369" fill="#475569" font-size="8" font-family="system-ui">Zapier · Make</text>
+  <circle cx="568" cy="338" r="5" fill="#10b981"/>
+
+  <rect x="588" y="334" width="136" height="60" rx="8" fill="#0d1628"/>
+  <rect x="598" y="344" width="28" height="28" rx="6" fill="#2e1065"/>
+  <text x="612" y="362" fill="#a78bfa" font-size="14" text-anchor="middle">👤</text>
+  <text x="634" y="357" fill="#e2e8f0" font-size="10" font-weight="600" font-family="system-ui">HubSpot</text>
+  <text x="634" y="369" fill="#475569" font-size="8" font-family="system-ui">CRM sync</text>
+  <circle cx="712" cy="338" r="5" fill="#10b981"/>
+
+  <rect x="444" y="402" width="136" height="60" rx="8" fill="#0d1628"/>
+  <rect x="454" y="412" width="28" height="28" rx="6" fill="#451a03"/>
+  <text x="468" y="430" fill="#fbbf24" font-size="14" text-anchor="middle">📧</text>
+  <text x="490" y="425" fill="#e2e8f0" font-size="10" font-weight="600" font-family="system-ui">Mailchimp</text>
+  <text x="490" y="437" fill="#475569" font-size="8" font-family="system-ui">Email drip</text>
+  <circle cx="568" cy="406" r="5" fill="#10b981"/>
+
+  <rect x="588" y="402" width="136" height="60" rx="8" fill="#0d1628"/>
+  <rect x="598" y="412" width="28" height="28" rx="6" fill="#0a2a1a"/>
+  <text x="612" y="430" fill="#4ade80" font-size="14" text-anchor="middle">🔔</text>
+  <text x="634" y="425" fill="#e2e8f0" font-size="10" font-weight="600" font-family="system-ui">Slack</text>
+  <text x="634" y="437" fill="#475569" font-size="8" font-family="system-ui">Sales alerts</text>
+  <circle cx="712" cy="406" r="5" fill="#10b981"/>
+
+  <rect x="444" y="470" width="136" height="60" rx="8" fill="#0d1628"/>
+  <rect x="454" y="480" width="28" height="28" rx="6" fill="#0a1a2e"/>
+  <text x="468" y="498" fill="#93c5fd" font-size="14" text-anchor="middle">📊</text>
+  <text x="490" y="493" fill="#e2e8f0" font-size="10" font-weight="600" font-family="system-ui">Google Sheets</text>
+  <text x="490" y="505" fill="#475569" font-size="8" font-family="system-ui">Logging</text>
+  <circle cx="568" cy="474" r="5" fill="#10b981"/>
+
+  <rect x="588" y="470" width="136" height="60" rx="8" fill="#0d1628"/>
+  <rect x="598" y="480" width="28" height="28" rx="6" fill="#0a2010"/>
+  <text x="612" y="498" fill="#86efac" font-size="14" text-anchor="middle">💬</text>
+  <text x="634" y="493" fill="#e2e8f0" font-size="10" font-weight="600" font-family="system-ui">WhatsApp</text>
+  <text x="634" y="505" fill="#475569" font-size="8" font-family="system-ui">Notifications</text>
+  <circle cx="712" cy="474" r="5" fill="#10b981"/>
+
+  <!-- Panel 3: Stats -->
+  <rect x="772" y="300" width="368" height="240" rx="12" fill="#0b1020" stroke="#1a2240" stroke-width="1"/>
+  <text x="790" y="322" fill="#e2e8f0" font-size="12" font-weight="700" font-family="system-ui">Impact Metrics</text>
+
+  <!-- Big stat -->
+  <rect x="790" y="334" width="332" height="70" rx="10" fill="#0c1628" stroke="#1e3250" stroke-width="1"/>
+  <text x="810" y="362" fill="#6366f1" font-size="36" font-weight="800" font-family="system-ui">92%</text>
+  <text x="870" y="355" fill="#e2e8f0" font-size="13" font-weight="700" font-family="system-ui">Reduction in</text>
+  <text x="870" y="371" fill="#e2e8f0" font-size="13" font-weight="700" font-family="system-ui">manual admin work</text>
+  <text x="810" y="394" fill="#475569" font-size="9" font-family="system-ui">From 6-step manual process to fully automated pipeline</text>
+
+  <!-- Smaller stats row -->
+  <rect x="790" y="414" width="158" height="56" rx="8" fill="#0d1628"/>
+  <text x="808" y="434" fill="#94a3b8" font-size="9" font-weight="600" font-family="system-ui">STEPS AUTOMATED</text>
+  <text x="808" y="458" fill="#e2e8f0" font-size="22" font-weight="800" font-family="system-ui">6 / 6</text>
+  <text x="866" y="460" fill="#10b981" font-size="10" font-family="system-ui">100%</text>
+
+  <rect x="958" y="414" width="164" height="56" rx="8" fill="#0d1628"/>
+  <text x="976" y="434" fill="#94a3b8" font-size="9" font-weight="600" font-family="system-ui">AVG COMPLETION</text>
+  <text x="976" y="458" fill="#e2e8f0" font-size="22" font-weight="800" font-family="system-ui">0.9s</text>
+  <text x="1020" y="460" fill="#10b981" font-size="10" font-family="system-ui">per run</text>
+
+  <!-- Time saved bar -->
+  <text x="790" y="494" fill="#94a3b8" font-size="9" font-weight="600" font-family="system-ui">HOURS SAVED PER MONTH</text>
+  <rect x="790" y="500" width="332" height="10" rx="5" fill="#111827"/>
+  <rect x="790" y="500" width="306" height="10" rx="5" fill="#6366f1"/>
+  <text x="1130" y="510" fill="#818cf8" font-size="9" font-weight="700" font-family="system-ui" text-anchor="end">240 hrs</text>
+
+  <text x="790" y="528" fill="#94a3b8" font-size="9" font-weight="600" font-family="system-ui">ONBOARDING ERRORS ELIMINATED</text>
+  <rect x="790" y="534" width="332" height="10" rx="5" fill="#111827"/>
+  <rect x="790" y="534" width="315" height="10" rx="5" fill="#10b981"/>
+  <text x="1130" y="544" fill="#6ee7b7" font-size="9" font-weight="700" font-family="system-ui" text-anchor="end">95%</text>
+</svg>
